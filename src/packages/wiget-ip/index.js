@@ -1,5 +1,5 @@
-import WigetIp from './wiget-ip.vue';
+import LzWigetIp from './wiget-ip.vue';
 
-LzWigetIp.install = Vue => Vue.component('WigetIp', WigetIp);
+LzWigetIp.install = Vue => Vue.component(Switch.name, WigetIp);
 
 export default LzWigetIp;

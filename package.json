@@ -1,7 +1,7 @@
 {
   "name": "@lz-ui/web-component",
   "description": "test",
-  "version": "0.1.2",
+  "version": "0.1.31",
   "author": "lz-ui <lz-ui@jczxw.cn>",
   "license": "MIT",
   "private": false,
@@ -12,7 +12,8 @@
   ],
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "publish":"npm publish --access=public"
   },
   "dependencies": {
     "axios": "^0.19.0",

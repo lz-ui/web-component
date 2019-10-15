@@ -1,4 +1,4 @@
-import Switch from './switch.vue';
+import LzSwitch from './Switch.vue';
 
 LzSwitch.install = Vue => Vue.component(Switch.name, Switch);
 

@@ -25,4 +25,8 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 
     1.添加 LzSwitch组件
     2.添加 LzWigetIp
+
+    2019/10/16   v 0.1.3
+
+    1.修复打包报错
     

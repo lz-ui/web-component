@@ -7,7 +7,7 @@
 <script>
   import { getWigetIp } from '../../api/index'
   export default {
-    name: "WigetIp",
+    name: "LzWigetIp",
     data() {
       return {
           wigetIp: {

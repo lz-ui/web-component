@@ -1,9 +1,11 @@
 var path = require('path')
 var webpack = require('webpack')
 
+console.log(process.env.NODE_ENV)
+
 module.exports = {
   // 修改打包入口
-  entry: process.env.NODE_ENV == 'development' ? './src/main.js' : './src/index.js',
+  entry: process.env.NODE_ENV === 'development' ? './src/main.js' : './src/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',

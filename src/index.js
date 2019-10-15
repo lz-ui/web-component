@@ -1,7 +1,6 @@
 import LzSwitch from './packages/switch/index';
 import LzWigetIp from './packages/wiget-ip/index';
 
-
 import './common/style/reset.css'
 
 const components = [
@@ -10,6 +9,7 @@ const components = [
 ]
 
 const install = function (Vue, opts = {}) {
+  console.log(components)
   components.map(component => {
     Vue.component(component.name, component);
   })
@@ -23,5 +23,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
   install,
   LzSwitch,
-  LzWigetIp
+  LzWigetIp,
+  version: '0.1.3'
 }
