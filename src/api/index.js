@@ -1,8 +1,11 @@
 import service from '../utils/request.js'
 
-export function getWigetIp() {
+export function getWigetIp(data) {
   return service({
     url: 'https://blog.jczxw.cn/api/ip', 
-    method: 'get'
+    method: 'get',
+    params:{
+      ...data
+    }
   })
 }

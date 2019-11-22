@@ -23,7 +23,7 @@
     },
     methods: {
       getIp() {
-        getWigetIp().then(res => {
+        getWigetIp({t: new Date().getTime()}).then(res => {
             if(res.code === '0') {
                 this.wigetIp = res.result;
                 this.$emit('getIp', res.result)
